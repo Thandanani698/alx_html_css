@@ -18,4 +18,4 @@ This project is focused on creating a beautifully styled webpage using advanced 
 ## Setup and Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/alx_html_css.git
+   git clone https://github.com/<Thandanani698>/alx_html_css.git
