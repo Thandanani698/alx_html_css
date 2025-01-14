@@ -1,69 +1,42 @@
 /* Existing Styles (unchanged) */
 
-/* FAQ Section */
-section#faq {
-    background-color: #f9f9f9; /* Light background for the FAQ section */
-    padding: 60px 20px;
-    text-align: center;
-    border-top: 4px solid #001f3d; /* Dark blue top border */
+/* Footer Section */
+footer {
+    background-color: #001f3d; /* Dark blue background for the footer */
+    color: #ffffff; /* White text color */
+    padding: 40px 20px; /* Padding for spacing */
+    text-align: center; /* Center-align text */
+    font-size: 1.2em; /* Font size for the footer content */
 }
 
-section#faq h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #001f3d; /* Dark blue color for heading */
-    margin-bottom: 30px;
+footer p {
+    margin: 10px 0; /* Margin for paragraph to avoid crowding */
 }
 
-section#faq .faq-item {
-    background-color: #ffffff; /* White background for each FAQ item */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for each FAQ item */
-    margin-bottom: 20px;
-    text-align: left; /* Align text to the left for better readability */
+footer .social-icons {
+    margin-top: 20px; /* Space between text and social icons */
 }
 
-section#faq .faq-item h3 {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #001f3d; /* Dark blue color for the question */
-    margin-bottom: 15px;
+footer .social-icons a {
+    color: #ffffff; /* White color for the icons */
+    font-size: 2em; /* Size for the icons */
+    margin: 0 15px; /* Space between icons */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-section#faq .faq-item p {
-    font-size: 1.1em;
-    color: #666; /* Medium gray for the answer */
-    line-height: 1.6;
-}
-
-section#faq .faq-item button {
-    background-color: #001f3d; /* Dark blue button */
-    color: white;
-    padding: 12px 20px;
-    font-size: 1.1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-}
-
-section#faq .faq-item button:hover {
-    background-color: #005f88; /* Lighter blue for hover effect */
+footer .social-icons a:hover {
+    color: #00aaff; /* Light blue color on hover */
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    section#faq {
-        padding: 40px 15px;
+    footer {
+        padding: 30px 15px; /* Reduce padding for smaller screens */
+        font-size: 1em; /* Smaller font size for mobile */
     }
 
-    section#faq .faq-item {
-        padding: 15px;
-    }
-
-    section#faq h2 {
-        font-size: 2.2em;
+    footer .social-icons a {
+        font-size: 1.5em; /* Smaller icons for mobile */
+        margin: 0 10px; /* Reduce margin between icons */
     }
 }
