@@ -1,50 +1,89 @@
 /* Existing Styles (unchanged) */
 
-/* Quote Section */
-section#quote {
-    background-color: #f7f7f7; /* Light gray background */
+/* Membership Section */
+section#membership {
+    background-color: #fff; /* White background for clarity */
     padding: 60px 20px;
+    text-align: center;
+    border-top: 4px solid #001f3d; /* Dark blue top border to match the theme */
+}
+
+section#membership h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #001f3d; /* Dark blue */
+    margin-bottom: 20px;
+}
+
+section#membership p {
+    font-size: 1.2em;
+    color: #666; /* Medium gray for text readability */
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+section#membership .membership-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+section#membership .membership-option {
+    background-color: #f0f0f0; /* Light gray for options box */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 300px;
     text-align: center;
 }
 
-section#quote blockquote {
-    font-style: italic;
-    font-size: 1.5em;
-    color: #333; /* Dark gray for readability */
-    margin: 20px auto;
-    max-width: 800px;
-    line-height: 1.6;
-    padding: 20px;
-    border-left: 5px solid #001f3d; /* Dark blue left border to match the theme */
+section#membership .membership-option h3 {
+    font-size: 1.8em;
+    color: #333; /* Dark text for heading */
+    margin-bottom: 15px;
 }
 
-section#quote blockquote p {
-    margin: 0;
+section#membership .membership-option p {
+    font-size: 1em;
+    color: #666; /* Gray text for description */
+    margin-bottom: 25px;
 }
 
-section#quote .quote-author {
+section#membership .membership-option .price {
+    font-size: 1.6em;
+    color: #001f3d; /* Dark blue price */
     font-weight: bold;
-    margin-top: 10px;
-    color: #001f3d; /* Dark blue color for the author’s name */
-    font-size: 1.2em;
+    margin-bottom: 25px;
 }
 
-section#quote .quote-author::before {
-    content: "— "; /* Add dash before the name */
+section#membership .membership-option button {
+    background-color: #001f3d; /* Dark blue button */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section#membership .membership-option button:hover {
+    background-color: #005f88; /* Lighter blue for hover effect */
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    section#quote {
-        padding: 40px 10px;
+    section#membership {
+        padding: 40px 15px;
     }
 
-    section#quote blockquote {
-        font-size: 1.2em; /* Adjust font size for smaller screens */
-        max-width: 90%; /* Allow more space on smaller screens */
+    section#membership .membership-options {
+        flex-direction: column;
+        gap: 20px;
     }
 
-    section#quote .quote-author {
-        font-size: 1.1em;
+    section#membership .membership-option {
+        width: 100%;
+        padding: 25px;
     }
 }
