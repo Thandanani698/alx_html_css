@@ -1,62 +1,43 @@
 /* Existing Styles (unchanged) */
 
-/* Membership Section */
-section#membership {
-    background-color: #fff; /* White background for clarity */
+/* FAQ Section */
+section#faq {
+    background-color: #f9f9f9; /* Light background for the FAQ section */
     padding: 60px 20px;
     text-align: center;
-    border-top: 4px solid #001f3d; /* Dark blue top border to match the theme */
+    border-top: 4px solid #001f3d; /* Dark blue top border */
 }
 
-section#membership h2 {
+section#faq h2 {
     font-size: 2.5em;
     font-weight: bold;
-    color: #001f3d; /* Dark blue */
-    margin-bottom: 20px;
+    color: #001f3d; /* Dark blue color for heading */
+    margin-bottom: 30px;
 }
 
-section#membership p {
-    font-size: 1.2em;
-    color: #666; /* Medium gray for text readability */
-    margin-bottom: 40px;
-    line-height: 1.6;
-}
-
-section#membership .membership-options {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-section#membership .membership-option {
-    background-color: #f0f0f0; /* Light gray for options box */
-    padding: 30px;
+section#faq .faq-item {
+    background-color: #ffffff; /* White background for each FAQ item */
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    width: 300px;
-    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for each FAQ item */
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left for better readability */
 }
 
-section#membership .membership-option h3 {
+section#faq .faq-item h3 {
     font-size: 1.8em;
-    color: #333; /* Dark text for heading */
+    font-weight: bold;
+    color: #001f3d; /* Dark blue color for the question */
     margin-bottom: 15px;
 }
 
-section#membership .membership-option p {
-    font-size: 1em;
-    color: #666; /* Gray text for description */
-    margin-bottom: 25px;
+section#faq .faq-item p {
+    font-size: 1.1em;
+    color: #666; /* Medium gray for the answer */
+    line-height: 1.6;
 }
 
-section#membership .membership-option .price {
-    font-size: 1.6em;
-    color: #001f3d; /* Dark blue price */
-    font-weight: bold;
-    margin-bottom: 25px;
-}
-
-section#membership .membership-option button {
+section#faq .faq-item button {
     background-color: #001f3d; /* Dark blue button */
     color: white;
     padding: 12px 20px;
@@ -65,25 +46,24 @@ section#membership .membership-option button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
-section#membership .membership-option button:hover {
+section#faq .faq-item button:hover {
     background-color: #005f88; /* Lighter blue for hover effect */
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    section#membership {
+    section#faq {
         padding: 40px 15px;
     }
 
-    section#membership .membership-options {
-        flex-direction: column;
-        gap: 20px;
+    section#faq .faq-item {
+        padding: 15px;
     }
 
-    section#membership .membership-option {
-        width: 100%;
-        padding: 25px;
+    section#faq h2 {
+        font-size: 2.2em;
     }
 }
