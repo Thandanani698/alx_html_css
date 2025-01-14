@@ -8,88 +8,94 @@
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
     color: #333;
     line-height: 1.6;
-    background-color: #f4f4f9;
 }
 
 /* Header */
 header {
-    background-color: #282c34;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
 }
 
 header nav ul {
-    list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0 20px;
+}
+
+header nav ul li {
+    margin: 0 10px;
 }
 
 header nav ul li a {
-    color: #ffffff;
     text-decoration: none;
+    color: white;
     font-size: 1rem;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    background-color: #444;
-    border-radius: 5px;
+    color: #00ccff;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 2rem;
+    color: #00ccff;
+    font-weight: bold;
 }
 
 /* Main Section */
 main {
     padding: 20px;
-    text-align: center;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-main h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-main p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    * works_on_smartphone Class */
-.works_on_smartphone {
+article {
+    background-color: #fff9e6;
     padding: 15px;
-    font-size: 1rem;
-    text-align: center;
-    margin: 10px auto;
-}
+    border-radius: 8px;
+    border: 1px solid #ffd966;
 }
 
-main button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+article h1 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 }
 
-main button:hover {
-    background-color: #0056b3;
+article p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
 }
 
 /* Footer */
 footer {
-    background-color: #282c34;
-    color: #ffffff;
+    background-color: #333;
+    color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
     font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
 }
