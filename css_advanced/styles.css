@@ -1,101 +1,104 @@
-/* General Reset */
-* {
+/* General Styles */
+body {
+    font-family: 'Source Sans Pro', Arial, sans-serif; /* Assuming from Figma */
+    background-color: #f4f4f4; /* Light gray background, can be adjusted */
+    color: #333; /* Default text color */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f5;
-    color: #333;
-    line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
-
-header nav ul {
+    background-color: #001f3d; /* Dark blue background, replace with exact color from Figma */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    list-style: none;
-    padding: 0 20px;
 }
 
-header nav ul li {
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #00ccff;
-}
-
-/* Logo Styling */
-.logo {
-    font-size: 2rem;
-    color: #00ccff;
+header .logo {
+    font-size: 2.5em; /* Adjust based on Figma */
     font-weight: bold;
+    margin-right: 20px;
 }
 
-/* Main Section */
-main {
-    padding: 20px;
-    background-color: white;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+header h1 {
+    font-size: 2em; /* Adjust based on Figma */
+    margin: 0;
 }
 
-article {
-    background-color: #fff9e6;
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid #ffd966;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
 }
 
-article h1 {
-    color: #333;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+nav ul li {
+    margin: 0 20px;
 }
 
-article p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: #555;
+nav ul li a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 1.2em; /* Adjust based on Figma */
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main First Section */
+section#about {
+    background-color: #ffffff; /* White background for the section, adjust from Figma */
+    padding: 80px 40px;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    font-size: 0.9rem;
 }
 
-/* Responsive Design */
+section#about h2 {
+    font-size: 2.5em; /* Adjust based on Figma */
+    color: #001f3d; /* Dark blue for the heading, from Figma */
+    margin-bottom: 20px;
+}
+
+section#about p {
+    font-size: 1.2em; /* Adjust based on Figma */
+    color: #666; /* Light gray text color */
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+section#about img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Media Query for Smaller Devices */
 @media (max-width: 768px) {
-    header nav ul {
+    header {
         flex-direction: column;
-        align-items: flex-start;
+        text-align: center;
     }
 
-    .logo {
-        margin-bottom: 10px;
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section#about {
+        padding: 60px 20px;
+    }
+
+    section#about h2 {
+        font-size: 2em;
+    }
+
+    section#about p {
+        font-size: 1.1em;
     }
 }
