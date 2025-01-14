@@ -60,6 +60,13 @@ main h2 {
 main p {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    * works_on_smartphone Class */
+.works_on_smartphone {
+    padding: 15px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px auto;
+}
 }
 
 main button {
