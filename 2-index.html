@@ -1,68 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Headphones Store</title>
-    <link rel="stylesheet" href="2-styles.css">
-    <link rel="stylesheet" href="assets/css/holberton-icons.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Section with Background</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f5f5f5;
+    }
+    .section {
+      max-width: 1000px;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      background: url('background.jpg') no-repeat center center/cover;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      color: white;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .section-subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .item {
+      flex: 1 1 calc(25% - 20px);
+      max-width: calc(25% - 20px);
+      background: url('item-background.jpg') no-repeat center center/cover;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+    }
+    .item-number {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .item-description {
+      font-size: 1rem;
+    }
+    @media (max-width: 768px) {
+      .item {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    }
+    @media (max-width: 480px) {
+      .item {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header class="hero">
-        <nav class="navbar">
-            <div class="logo">Headphones</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero-content">
-            <h1>Experience the Best Sound</h1>
-            <p>Discover our premium collection of headphones designed for comfort and superior audio quality.</p>
-            <a href="#" class="cta-button">Shop Now</a>
-        </div>
-    </header>
-
-    <main>
-        <section class="what-we-do">
-            <h2>What we do</h2>
-            <div class="services">
-                <div class="service">
-                    <span class="icon custom-icon-headphones"></span>
-                    <h3>High-Quality Audio</h3>
-                    <p>Experience unparalleled sound quality with our premium headphones.</p>
-                </div>
-                <div class="service">
-                    <span class="icon custom-icon-support"></span>
-                    <h3>24/7 Support</h3>
-                    <p>We’re here for you whenever you need assistance or advice.</p>
-                </div>
-                <div class="service">
-                    <span class="icon custom-icon-delivery"></span>
-                    <h3>Fast Delivery</h3>
-                    <p>Get your products delivered swiftly with our reliable service.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="our-results">
-            <h2>Our Results</h2>
-            <div class="results">
-                <div class="result">
-                    <h3>500K+</h3>
-                    <p>Satisfied Customers</p>
-                </div>
-                <div class="result">
-                    <h3>1M+</h3>
-                    <p>Products Sold</p>
-                </div>
-                <div class="result">
-                    <h3>98%</h3>
-                    <p>Positive Feedback</p>
-                </div>
-            </div>
-        </section>
-    </main>
+  <div class="section">
+    <h1 class="section-title">Section Title</h1>
+    <p class="section-subtitle">This is the section subtitle</p>
+    <div class="items">
+      <div class="item">
+        <div class="item-number">1</div>
+        <p class="item-description">Description for item 1</p>
+      </div>
+      <div class="item">
+        <div class="item-number">2</div>
+        <p class="item-description">Description for item 2</p>
+      </div>
+      <div class="item">
+        <div class="item-number">3</div>
+        <p class="item-description">Description for item 3</p>
+      </div>
+      <div class="item">
+        <div class="item-number">4</div>
+        <p class="item-description">Description for item 4</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
