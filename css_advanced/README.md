@@ -1,40 +1,35 @@
-# TechCon 2024
+# Headphones Store Website
 
-Welcome to the TechCon 2024 website! This page represents the upcoming technology conference, featuring keynotes, workshops, and networking opportunities for professionals and enthusiasts.
+This project contains the HTML and CSS files for building a responsive landing page for a fictional headphones store.
 
-## Preview
+## Features
 
-![TechCon Logo](images/logo.png)
+- **Hero Section**: Engaging header with a call-to-action button.
+- **What We Do Section**: Highlights the store's core features using custom icons and animations.
+- **Our Results Section**: Showcases the store's achievements with CSS-generated shapes and animations.
+- **Contact Us Form**: A simple, functional contact form with input fields and validation.
+- **Footer**: Provides quick links and social media buttons.
 
-Above is the logo for TechCon 2024. This can be found in the `images/` directory and is used on the main page.
+## File Structure
 
-## Project Screenshots
-
-Here are some screenshots of the TechCon 2024 website:
-
-### Home Page
-![Home Page](images/homepage.png)
-
-This is the home page of TechCon 2024. It introduces visitors to the event and provides navigation to other pages such as Schedule and About.
-
-### About Page
-![About Page](images/about.png)
-
-This section outlines the history and mission of TechCon.
-
-### Schedule Page
-![Schedule Page](images/schedule.png)
-
-The schedule page shows the event details, including session times and speakers.
-
-## Files Overview
-
-- `index.html`: The main HTML structure of the webpage.
-- `styles.css`: CSS styling for the page layout and design.
-- `README.md`: Project description and files overview.
-
-## Project Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/alx_html_css.git
+```plaintext
+headphones/
+├── assets/
+│   ├── css/
+│   │   └── holberton-icons.css  # Custom font icons stylesheet
+│   └── images/                 # Images for the website (if applicable)
+├── 0-index.html                # Initial structure with hero section
+├── 0-styles.css                # Styles for 0-index.html
+├── 1-index.html                # Adds 'What We Do' section
+├── 1-styles.css                # Styles for 1-index.html
+├── 2-index.html                # Adds 'Our Results' section
+├── 2-styles.css                # Styles for 2-index.html
+├── 3-index.html                # Adds 'Contact Us' section
+├── 3-styles.css                # Styles for 3-index.html
+├── 4-index.html                # Adds Footer section
+├── 4-styles.css                # Styles for 4-index.html
+├── 6-index.html                # Replaces background images with CSS pentagons
+├── 6-styles.css                # Styles for pentagon shapes
+├── 7-index.html                # Adds animations to 'What We Do' and 'Our Results'
+├── 7-styles.css                # Animation styles
+└── README.md                   # Project documentation
