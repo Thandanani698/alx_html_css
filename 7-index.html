@@ -1,115 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Headphones Store</title>
-    <link rel="stylesheet" href="7-styles.css">
-    <link rel="stylesheet" href="assets/css/holberton-icons.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazing Results with Animations</title>
+  <style>
+    /* Internal CSS for layout and animations */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      width: 100%;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .results-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .result-item {
+      background-color: white;
+      border: 1px solid #ddd;
+      margin: 20px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      animation: fadeInUp 1s forwards, scaleUp 1s forwards;
+    }
+
+    .result-item:nth-child(odd) {
+      animation-delay: 0.2s;
+    }
+
+    .result-item:nth-child(even) {
+      animation-delay: 0.4s;
+    }
+
+    .result-item h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .result-item p {
+      color: #555;
+    }
+
+    /* Keyframe Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleUp {
+      from {
+        transform: scale(0.9);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+
+  </style>
 </head>
 <body>
-    <header class="hero">
-        <nav class="navbar">
-            <div class="logo">Headphones</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero-content">
-            <h1>Experience the Best Sound</h1>
-            <p>Discover our premium collection of headphones designed for comfort and superior audio quality.</p>
-            <a href="#" class="cta-button">Shop Now</a>
-        </div>
-    </header>
 
-    <main>
-        <section class="what-we-do">
-            <h2>What we do</h2>
-            <div class="services">
-                <div class="service animated">
-                    <span class="icon custom-icon-headphones"></span>
-                    <h3>High-Quality Audio</h3>
-                    <p>Experience unparalleled sound quality with our premium headphones.</p>
-                </div>
-                <div class="service animated">
-                    <span class="icon custom-icon-support"></span>
-                    <h3>24/7 Support</h3>
-                    <p>We’re here for you whenever you need assistance or advice.</p>
-                </div>
-                <div class="service animated">
-                    <span class="icon custom-icon-delivery"></span>
-                    <h3>Fast Delivery</h3>
-                    <p>Get your products delivered swiftly with our reliable service.</p>
-                </div>
-            </div>
-        </section>
+  <header>
+    <h1>Amazing Results</h1>
+  </header>
 
-        <section class="our-results">
-            <h2>Our Results</h2>
-            <div class="results animated">
-                <div class="result">
-                    <h3>500K+</h3>
-                    <p>Satisfied Customers</p>
-                </div>
-                <div class="result">
-                    <h3>1M+</h3>
-                    <p>Products Sold</p>
-                </div>
-                <div class="result">
-                    <h3>98%</h3>
-                    <p>Positive Feedback</p>
-                </div>
-            </div>
-        </section>
+  <section class="results-container">
+    <div class="result-item">
+      <h3>Result 1</h3>
+      <p>Details about the first result with engaging text and animations.</p>
+    </div>
+    <div class="result-item">
+      <h3>Result 2</h3>
+      <p>Details about the second result, giving an impressive display.</p>
+    </div>
+    <div class="result-item">
+      <h3>Result 3</h3>
+      <p>Details about the third result that fits into the animated grid.</p>
+    </div>
+  </section>
 
-        <section class="contact-form">
-            <h2>Contact Us</h2>
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="submit-button">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h3>About Us</h3>
-                <p>We provide high-quality headphones with exceptional sound clarity and comfort.</p>
-            </div>
-            <div class="footer-section links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section social">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#" class="social-icon">Facebook</a>
-                    <a href="#" class="social-icon">Twitter</a>
-                    <a href="#" class="social-icon">Instagram</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Headphones Store. All Rights Reserved.</p>
-        </div>
-    </footer>
 </body>
 </html>
