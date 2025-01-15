@@ -1,0 +1,47 @@
+/* Our Results Section */
+.our-results {
+    padding: 50px 20px;
+    background-color: #e9f5ff;
+    text-align: center;
+}
+
+.our-results h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.results {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.result {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.result h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.result p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .results {
+        flex-direction: column;
+        align-items: center;
+    }
+}
