@@ -1,50 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Headphones Store</title>
-    <link rel="stylesheet" href="1-styles.css">
-    <link rel="stylesheet" href="assets/css/holberton-icons.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Section</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f5f5f5;
+    }
+    .section {
+      max-width: 1000px;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      background: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .section-title {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .item {
+      flex: 1 1 calc(25% - 20px);
+      max-width: calc(25% - 20px);
+      text-align: center;
+    }
+    .item-icon {
+      font-size: 3rem;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+    .item-title {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    .item-subtitle {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    @media (max-width: 768px) {
+      .item {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    }
+    @media (max-width: 480px) {
+      .item {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header class="hero">
-        <nav class="navbar">
-            <div class="logo">Headphones</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero-content">
-            <h1>Experience the Best Sound</h1>
-            <p>Discover our premium collection of headphones designed for comfort and superior audio quality.</p>
-            <a href="#" class="cta-button">Shop Now</a>
-        </div>
-    </header>
-
-    <main>
-        <section class="what-we-do">
-            <h2>What we do</h2>
-            <div class="services">
-                <div class="service">
-                    <span class="icon custom-icon-headphones"></span>
-                    <h3>High-Quality Audio</h3>
-                    <p>Experience unparalleled sound quality with our premium headphones.</p>
-                </div>
-                <div class="service">
-                    <span class="icon custom-icon-support"></span>
-                    <h3>24/7 Support</h3>
-                    <p>We’re here for you whenever you need assistance or advice.</p>
-                </div>
-                <div class="service">
-                    <span class="icon custom-icon-delivery"></span>
-                    <h3>Fast Delivery</h3>
-                    <p>Get your products delivered swiftly with our reliable service.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+  <div class="section">
+    <h1 class="section-title">Section Title</h1>
+    <p class="section-subtitle">This is the section subtitle</p>
+    <div class="items">
+      <div class="item">
+        <div class="item-icon">&#9733;</div>
+        <h2 class="item-title">Item 1</h2>
+        <p class="item-subtitle">Subtitle 1</p>
+      </div>
+      <div class="item">
+        <div class="item-icon">&#9733;</div>
+        <h2 class="item-title">Item 2</h2>
+        <p class="item-subtitle">Subtitle 2</p>
+      </div>
+      <div class="item">
+        <div class="item-icon">&#9733;</div>
+        <h2 class="item-title">Item 3</h2>
+        <p class="item-subtitle">Subtitle 3</p>
+      </div>
+      <div class="item">
+        <div class="item-icon">&#9733;</div>
+        <h2 class="item-title">Item 4</h2>
+        <p class="item-subtitle">Subtitle 4</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
